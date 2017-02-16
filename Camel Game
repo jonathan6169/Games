@@ -1,0 +1,31 @@
+import random
+print("Welcome, this is the CAMEL GAME")
+print("You have just stolen a camel from the village and the villagers are angry")
+print("You have to reach the end of the desert to escape them, the desert is 200 miles long")
+print("Good Luck!")
+
+full_speed = random.randint(10, 16)
+position = 0
+villagers = -30
+full_speed = int(full_speed)
+position = int(position)
+
+print("A. Go ahead at full speed")
+print("B. Advance at moderate speed")
+print("C. Stop and rest")
+print("D. Drink 1 bottle of water")
+print("E. Status check")
+print("Q. Quit Game")
+
+response = input("What do you want to do ? :")
+while position > 0 and position < 200:
+    if response == "A" or response == "a":
+        position = position + 1
+        print(position)
+
+print("A. Go ahead at full speed")
+print("B. Advance at moderate speed")
+print("C. Stop and rest")
+print("D. Drink 1 bottle of water")
+print("E. Status check")
+print("Q. Quit Game")
