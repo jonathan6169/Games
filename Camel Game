@@ -3,14 +3,18 @@ print("Welcome, this is the CAMEL GAME")
 print("You have just stolen a camel from the village and the villagers are angry")
 print("You have to reach the end of the desert to escape them, the desert is 200 miles long")
 print("Good Luck!")
+    
+miles_traveled = 0
+villagers_position = -30
+thirst = 10
+camel_fatigue = 15
+oasis = 0
 
-
-position = 0
-villagers = -30
-position = int(position)
-
-while position < 200:
+done = False
+while done == False:
     full_speed = random.randint(10, 16)
+    moderate_speed = random.randint(5, 9)
+    natives_behind = miles_traveled - villagers_position
     print("A. Go ahead at full speed")
     print("B. Advance at moderate speed")
     print("C. Stop and rest")
@@ -20,6 +24,12 @@ while position < 200:
 
     response = input("What do you want to do ? :")
     if response == "A" or response == "a":
-        position = position + full_speed
-        print(str(position))
-    elif 
+        miles_traveled = miles_traveled + full_speed
+        
+        print("You traveled ", miles_traveled ," miles")
+
+
+
+
+
+        
